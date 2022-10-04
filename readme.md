@@ -6,9 +6,9 @@ https://github.com/luchina-gabriel/BASE-EFI-INTEL-DESKTOP-12THGEN-ALDER-LAKE
 
 
 
-**目前我的一切正常，使用和白苹果无差异。**
+**目前我的一切正常，使用和白苹果无差异。(从 12.3 直接升级到了 12.6 无问题）**
 
-<img src="./images/image-20221004124647335.png" alt="image-20221004124647335" style="zoom:50%;" />
+![image-20221004143616388](./assets/image-20221004143616388.png)
 
 
 
