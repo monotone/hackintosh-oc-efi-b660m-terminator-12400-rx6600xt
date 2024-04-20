@@ -281,7 +281,7 @@
                     <key>BundlePath</key>
                     <string>RestrictEvents.kext</string>
                     <key>Comment</key>
-                    <string>V1.0.8</string>
+                    <string>V1.1.3</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -519,7 +519,7 @@
                 <key>DisplayDelay</key>
                 <integer>0</integer>
                 <key>DisplayLevel</key>
-                <integer>0</integer>
+                <integer>2147483714</integer>
                 <key>LogModules</key>
                 <string></string>
                 <key>SysReport</key>
@@ -554,7 +554,7 @@
                 <key>ScanPolicy</key>
                 <integer>3080963</integer>
                 <key>SecureBootModel</key>
-                <string>j160</string>
+                <string>Disabled</string>
                 <key>Vault</key>
                 <string>Optional</string>
             </dict>
@@ -624,7 +624,7 @@
                     <key>Comment</key>
                     <string></string>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>Flavour</key>
                     <string>Auto</string>
                     <key>FullNvramAccess</key>
@@ -660,28 +660,6 @@
                     <key>TextMode</key>
                     <false/>
                 </dict>
-                <dict>
-                    <key>Arguments</key>
-                    <string></string>
-                    <key>Auxiliary</key>
-                    <false/>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>Flavour</key>
-                    <string>Auto</string>
-                    <key>FullNvramAccess</key>
-                    <false/>
-                    <key>Name</key>
-                    <string>CFGLock</string>
-                    <key>Path</key>
-                    <string>CFGLock.efi</string>
-                    <key>RealPath</key>
-                    <false/>
-                    <key>TextMode</key>
-                    <false/>
-                </dict>
             </array>
         </dict>
         <key>NVRAM</key>
@@ -690,15 +668,19 @@
             <dict>
                 <key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
                 <dict>
+                    <key>revblock</key>
+                    <string>pci</string>
                     <key>revcpu</key>
                     <integer>1</integer>
                     <key>revcpuname</key>
-                    <string>12th Gen Intel(R) Core(TM) i5-12400</string>
+                    <string>12th Gen Intel(R) Core(TM) i5-12400F</string>
+                    <key>revpatch</key>
+                    <string>pci</string>
                 </dict>
                 <key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
                 <dict>
                     <key>boot-args</key>
-                    <string>-v keepsyms=1 debug=0x100 agdpmod=pikera alcid=11 gfxrst=1 igfxonln=1 swd_panic=1</string>
+                    <string>keepsyms=1 debug=0x100 agdpmod=pikera alcid=11 gfxrst=1 igfxonln=1 swd_panic=1</string>
                     <key>csr-active-config</key>
                     <data>AAAAAA==</data>
                 </dict>
@@ -728,7 +710,7 @@
             <key>Automatic</key>
             <true/>
             <key>CustomMemory</key>
-            <false/>
+            <true/>
             <key>Generic</key>
             <dict>
                 <key>AdviseFeatures</key>
@@ -751,6 +733,98 @@
                 <string>F5KST1YSP7QM</string>
                 <key>SystemUUID</key>
                 <string>A58C2DC8-A545-46D0-BA1D-2F958DDB1E8D</string>
+            </dict>
+            <key>Memory</key>
+            <dict>
+                <key>DataWidth</key>
+                <integer>0</integer>
+                <key>Devices</key>
+                <array>
+                    <dict>
+                        <key>AssetTag</key>
+                        <string></string>
+                        <key>BankLocator</key>
+                        <string>BANK 0</string>
+                        <key>DeviceLocator</key>
+                        <string>Controller0-ChannelA-DIMM0</string>
+                        <key>Manufacturer</key>
+                        <string>Team Group Inc</string>
+                        <key>PartNumber</key>
+                        <string>TEAMGROUP-UD4-3200</string>
+                        <key>SerialNumber</key>
+                        <string>0104F3DA</string>
+                        <key>Size</key>
+                        <integer>8192</integer>
+                        <key>Speed</key>
+                        <integer>3200</integer>
+                    </dict>
+                    <dict>
+                        <key>AssetTag</key>
+                        <string></string>
+                        <key>BankLocator</key>
+                        <string>BANK 1</string>
+                        <key>DeviceLocator</key>
+                        <string>Controller0-ChannelA-DIMM1</string>
+                        <key>Manufacturer</key>
+                        <string>Team Group Inc</string>
+                        <key>PartNumber</key>
+                        <string>TEAMGROUP-UD4-3200</string>
+                        <key>SerialNumber</key>
+                        <string>0104F3DA</string>
+                        <key>Size</key>
+                        <integer>8192</integer>
+                        <key>Speed</key>
+                        <integer>3200</integer>
+                    </dict>
+                    <dict>
+                        <key>AssetTag</key>
+                        <string></string>
+                        <key>BankLocator</key>
+                        <string>BANK 2</string>
+                        <key>DeviceLocator</key>
+                        <string>Controller1-ChannelA-DIMM0</string>
+                        <key>Manufacturer</key>
+                        <string>Team Group Inc</string>
+                        <key>PartNumber</key>
+                        <string>TEAMGROUP-UD4-3200</string>
+                        <key>SerialNumber</key>
+                        <string>0104F3DA</string>
+                        <key>Size</key>
+                        <integer>8192</integer>
+                        <key>Speed</key>
+                        <integer>3200</integer>
+                    </dict>
+                    <dict>
+                        <key>AssetTag</key>
+                        <string></string>
+                        <key>BankLocator</key>
+                        <string>BANK 3</string>
+                        <key>DeviceLocator</key>
+                        <string>Controller1-ChannelA-DIMM1</string>
+                        <key>Manufacturer</key>
+                        <string>Team Group Inc</string>
+                        <key>PartNumber</key>
+                        <string>TEAMGROUP-UD4-3200</string>
+                        <key>SerialNumber</key>
+                        <string>0104F3DA</string>
+                        <key>Size</key>
+                        <integer>8192</integer>
+                        <key>Speed</key>
+                        <integer>3200</integer>
+                    </dict>
+                </array>
+                <key>ErrorCorrection</key>
+                <integer>1</integer>
+                <key>FormFactor</key>
+                <integer>9</integer>
+                <key>MaxCapacity</key>
+                <integer>0</integer>
+                <key>TotalWidth</key>
+                <integer>0</integer>
+                <key>Type</key>
+                <integer>26</integer>
+                <key>TypeDetail</key>
+                <integer>24710</integer>
             </dict>
             <key>UpdateDataHub</key>
             <true/>
@@ -891,6 +965,18 @@
                     <false/>
                     <key>Path</key>
                     <string>ResetNvramEntry.efi</string>
+                </dict>
+                <dict>
+                    <key>Arguments</key>
+                    <string></string>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>LoadEarly</key>
+                    <false/>
+                    <key>Path</key>
+                    <string>OpenHfsPlus.efi</string>
                 </dict>
             </array>
             <key>Input</key>
