@@ -18,7 +18,7 @@ mkdir -p ~/macOS-installer && cd ~/macOS-installer && curl https://raw.githubuse
 
 我不确定直接从12升到 14行不行，但是可以尝试，反正原来的efi记得保留，然后有一个u盘能用来启动，就随便改。
 
-#### Memory Modules Misconfigured 问题
+#### Memory Modules Misconfigured 问题（还是没能修复）
 
 装完之后发现会通知提示这个，关了之后实际也没啥影响。
 
@@ -30,9 +30,14 @@ oc官方介绍[Fixing MacPro7,1 Memory Errors | OpenCore Post-Install (dortania.
 
 ![1713604423678](assets/readme/1713604423678.png)
 
-最后参照网上的搞法自定义内存解决，就是加完重启后用oc打开看不到了，奇怪。估计是版本兼容性问题吧，暂时不管了。EFI 直接更新到最新版本了。
+最后参照网上的搞法自定义内存，就是加完重启后用oc打开看不到了，问题还是没解决，奇怪。估计是版本兼容性问题吧，暂时不管了。
 
 ![1713606282672](assets/readme/1713606282672.png)
+
+#### CPU显示问题，按照 RestrictEvent这个插件的说法，定义了cpuname是可以覆盖默认名字的，但是实际还是不顶用
+
+未解决，求教！
+
 
 ## 说明
 
